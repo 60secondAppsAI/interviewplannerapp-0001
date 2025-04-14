@@ -125,9 +125,9 @@ public class ResumeServiceImpl extends GenericServiceImpl<Resume, Integer> imple
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("candidateName")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("candidateEmail")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("candidateEmail")), "%" + searchQuery.toLowerCase() + "%") 
              , cb.like(cb.lower(root.get("filePath")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("candidateName")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

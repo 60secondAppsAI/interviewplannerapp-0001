@@ -119,8 +119,8 @@ public class DepartmentServiceImpl extends GenericServiceImpl<Department, Intege
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("name")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("head")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("head")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("name")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();
