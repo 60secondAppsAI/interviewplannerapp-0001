@@ -35,10 +35,10 @@
                 </template>
                 <div>
                   <form @submit.prevent>
-  <base-input label="CandidateId" type="text" placeholder="Enter CandidateId" v-model="candidateToAdd.candidateId"></base-input>
-  <base-input label="Name" type="text" placeholder="Enter Name" v-model="candidateToAdd.name"></base-input>
   <base-input label="Email" type="text" placeholder="Enter Email" v-model="candidateToAdd.email"></base-input>
   <base-input label="PhoneNumber" type="text" placeholder="Enter PhoneNumber" v-model="candidateToAdd.phoneNumber"></base-input>
+  <base-input label="CandidateId" type="text" placeholder="Enter CandidateId" v-model="candidateToAdd.candidateId"></base-input>
+  <base-input label="Name" type="text" placeholder="Enter Name" v-model="candidateToAdd.name"></base-input>
                   </form>
                 </div>
                 <template slot="footer">
@@ -247,36 +247,6 @@ export default {
         this.columns = this.columns.filter(item => item.visible);
     },
 
-    routingToResumeDetail(id) {
-      this.$router.push({ name: 'ResumeDetail', params: { resumeId: id.toString() }})
-    },
-    routingToJobDescriptionDetail(id) {
-      this.$router.push({ name: 'JobDescriptionDetail', params: { jobDescriptionId: id.toString() }})
-    },
-    routingToFocusAreaDetail(id) {
-      this.$router.push({ name: 'FocusAreaDetail', params: { focusAreaId: id.toString() }})
-    },
-    routingToQuestionDetail(id) {
-      this.$router.push({ name: 'QuestionDetail', params: { questionId: id.toString() }})
-    },
-    routingToInterviewDetail(id) {
-      this.$router.push({ name: 'InterviewDetail', params: { interviewId: id.toString() }})
-    },
-    routingToInterviewerDetail(id) {
-      this.$router.push({ name: 'InterviewerDetail', params: { interviewerId: id.toString() }})
-    },
-    routingToInterviewSlotDetail(id) {
-      this.$router.push({ name: 'InterviewSlotDetail', params: { interviewSlotId: id.toString() }})
-    },
-    routingToFeedbackDetail(id) {
-      this.$router.push({ name: 'FeedbackDetail', params: { feedbackId: id.toString() }})
-    },
-    routingToCandidateDetail(id) {
-      this.$router.push({ name: 'CandidateDetail', params: { candidateId: id.toString() }})
-    },
-    routingToDepartmentDetail(id) {
-      this.$router.push({ name: 'DepartmentDetail', params: { departmentId: id.toString() }})
-    },
     routingToRoleDetail(id) {
       this.$router.push({ name: 'RoleDetail', params: { roleId: id.toString() }})
     },
@@ -303,6 +273,36 @@ export default {
     },
     routingToMeetingNoteDetail(id) {
       this.$router.push({ name: 'MeetingNoteDetail', params: { meetingNoteId: id.toString() }})
+    },
+    routingToQuestionDetail(id) {
+      this.$router.push({ name: 'QuestionDetail', params: { questionId: id.toString() }})
+    },
+    routingToInterviewDetail(id) {
+      this.$router.push({ name: 'InterviewDetail', params: { interviewId: id.toString() }})
+    },
+    routingToInterviewerDetail(id) {
+      this.$router.push({ name: 'InterviewerDetail', params: { interviewerId: id.toString() }})
+    },
+    routingToInterviewSlotDetail(id) {
+      this.$router.push({ name: 'InterviewSlotDetail', params: { interviewSlotId: id.toString() }})
+    },
+    routingToFeedbackDetail(id) {
+      this.$router.push({ name: 'FeedbackDetail', params: { feedbackId: id.toString() }})
+    },
+    routingToCandidateDetail(id) {
+      this.$router.push({ name: 'CandidateDetail', params: { candidateId: id.toString() }})
+    },
+    routingToJobDescriptionDetail(id) {
+      this.$router.push({ name: 'JobDescriptionDetail', params: { jobDescriptionId: id.toString() }})
+    },
+    routingToDepartmentDetail(id) {
+      this.$router.push({ name: 'DepartmentDetail', params: { departmentId: id.toString() }})
+    },
+    routingToFocusAreaDetail(id) {
+      this.$router.push({ name: 'FocusAreaDetail', params: { focusAreaId: id.toString() }})
+    },
+    routingToResumeDetail(id) {
+      this.$router.push({ name: 'ResumeDetail', params: { resumeId: id.toString() }})
     },
     
     handleSearchQueryChanged() {

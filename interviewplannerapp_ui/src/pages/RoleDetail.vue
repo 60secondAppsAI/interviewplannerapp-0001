@@ -22,8 +22,8 @@
 								                <div>
 								                  <form @submit.prevent>
 								  <base-input label="RoleId" type="text" placeholder="Enter RoleId" v-model="roleToAdd.roleId"></base-input>
-								  <base-input label="Title" type="text" placeholder="Enter Title" v-model="roleToAdd.title"></base-input>
 								  <base-input label="Level" type="text" placeholder="Enter Level" v-model="roleToAdd.level"></base-input>
+								  <base-input label="Title" type="text" placeholder="Enter Title" v-model="roleToAdd.title"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

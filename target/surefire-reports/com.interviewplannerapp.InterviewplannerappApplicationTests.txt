@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.interviewplannerapp.InterviewplannerappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.841 s - in com.interviewplannerapp.InterviewplannerappApplicationTests

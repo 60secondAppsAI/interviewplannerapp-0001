@@ -32,66 +32,6 @@
 	 
 			
 				<a-menu-item>
-					<router-link to="/resumes">
-						<span class="label">Resumes</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/jobDescriptions">
-						<span class="label">Job Descriptions</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/focusAreas">
-						<span class="label">Focus Areas</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/questions">
-						<span class="label">Questions</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/interviews">
-						<span class="label">Interviews</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/interviewers">
-						<span class="label">Interviewers</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/interviewSlots">
-						<span class="label">Interview Slots</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/feedbacks">
-						<span class="label">Feedbacks</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/candidates">
-						<span class="label">Candidates</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/departments">
-						<span class="label">Departments</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
 					<router-link to="/roles">
 						<span class="label">Roles</span>
 					</router-link>
@@ -142,6 +82,66 @@
 				<a-menu-item>
 					<router-link to="/meetingNotes">
 						<span class="label">Meeting Notes</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/questions">
+						<span class="label">Questions</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/interviews">
+						<span class="label">Interviews</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/interviewers">
+						<span class="label">Interviewers</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/interviewSlots">
+						<span class="label">Interview Slots</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/feedbacks">
+						<span class="label">Feedbacks</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/candidates">
+						<span class="label">Candidates</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/jobDescriptions">
+						<span class="label">Job Descriptions</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/departments">
+						<span class="label">Departments</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/focusAreas">
+						<span class="label">Focus Areas</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/resumes">
+						<span class="label">Resumes</span>
 					</router-link>
 				</a-menu-item>
 		

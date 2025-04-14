@@ -1,26 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
-import Resumes from  '@/pages/Resumes.vue';
-import ResumeDetail from  '@/pages/ResumeDetail.vue';
-import JobDescriptions from  '@/pages/JobDescriptions.vue';
-import JobDescriptionDetail from  '@/pages/JobDescriptionDetail.vue';
-import FocusAreas from  '@/pages/FocusAreas.vue';
-import FocusAreaDetail from  '@/pages/FocusAreaDetail.vue';
-import Questions from  '@/pages/Questions.vue';
-import QuestionDetail from  '@/pages/QuestionDetail.vue';
-import Interviews from  '@/pages/Interviews.vue';
-import InterviewDetail from  '@/pages/InterviewDetail.vue';
-import Interviewers from  '@/pages/Interviewers.vue';
-import InterviewerDetail from  '@/pages/InterviewerDetail.vue';
-import InterviewSlots from  '@/pages/InterviewSlots.vue';
-import InterviewSlotDetail from  '@/pages/InterviewSlotDetail.vue';
-import Feedbacks from  '@/pages/Feedbacks.vue';
-import FeedbackDetail from  '@/pages/FeedbackDetail.vue';
-import Candidates from  '@/pages/Candidates.vue';
-import CandidateDetail from  '@/pages/CandidateDetail.vue';
-import Departments from  '@/pages/Departments.vue';
-import DepartmentDetail from  '@/pages/DepartmentDetail.vue';
 import Roles from  '@/pages/Roles.vue';
 import RoleDetail from  '@/pages/RoleDetail.vue';
 import Educations from  '@/pages/Educations.vue';
@@ -39,6 +19,26 @@ import Permissions from  '@/pages/Permissions.vue';
 import PermissionDetail from  '@/pages/PermissionDetail.vue';
 import MeetingNotes from  '@/pages/MeetingNotes.vue';
 import MeetingNoteDetail from  '@/pages/MeetingNoteDetail.vue';
+import Questions from  '@/pages/Questions.vue';
+import QuestionDetail from  '@/pages/QuestionDetail.vue';
+import Interviews from  '@/pages/Interviews.vue';
+import InterviewDetail from  '@/pages/InterviewDetail.vue';
+import Interviewers from  '@/pages/Interviewers.vue';
+import InterviewerDetail from  '@/pages/InterviewerDetail.vue';
+import InterviewSlots from  '@/pages/InterviewSlots.vue';
+import InterviewSlotDetail from  '@/pages/InterviewSlotDetail.vue';
+import Feedbacks from  '@/pages/Feedbacks.vue';
+import FeedbackDetail from  '@/pages/FeedbackDetail.vue';
+import Candidates from  '@/pages/Candidates.vue';
+import CandidateDetail from  '@/pages/CandidateDetail.vue';
+import JobDescriptions from  '@/pages/JobDescriptions.vue';
+import JobDescriptionDetail from  '@/pages/JobDescriptionDetail.vue';
+import Departments from  '@/pages/Departments.vue';
+import DepartmentDetail from  '@/pages/DepartmentDetail.vue';
+import FocusAreas from  '@/pages/FocusAreas.vue';
+import FocusAreaDetail from  '@/pages/FocusAreaDetail.vue';
+import Resumes from  '@/pages/Resumes.vue';
+import ResumeDetail from  '@/pages/ResumeDetail.vue';
 
 Vue.use(VueRouter);
 
@@ -47,8 +47,8 @@ const routes = [
     path: "/",
     name: "home",
     component: () => import("../views/HomeView.vue"),
-			redirect: '/resumes',
-																			  },
+																					redirect: '/resumes',
+	  },
   {
     path: "/pricing",
     name: "PricingView",
@@ -69,136 +69,6 @@ const routes = [
     name: "StripeCheckoutView",
     component: () => import("../views/StripeCheckoutView.vue"),
   },
-	{
-		path: '/resumes',
-		name: 'Resumes',
-		layout: DefaultLayout,
-		component: Resumes,
-	},
-	{
-	    path: '/resume/:resumeId', 
-	    name: 'ResumeDetail',
-		layout: DefaultLayout,
-	    component: ResumeDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/jobDescriptions',
-		name: 'JobDescriptions',
-		layout: DefaultLayout,
-		component: JobDescriptions,
-	},
-	{
-	    path: '/jobDescription/:jobDescriptionId', 
-	    name: 'JobDescriptionDetail',
-		layout: DefaultLayout,
-	    component: JobDescriptionDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/focusAreas',
-		name: 'FocusAreas',
-		layout: DefaultLayout,
-		component: FocusAreas,
-	},
-	{
-	    path: '/focusArea/:focusAreaId', 
-	    name: 'FocusAreaDetail',
-		layout: DefaultLayout,
-	    component: FocusAreaDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/questions',
-		name: 'Questions',
-		layout: DefaultLayout,
-		component: Questions,
-	},
-	{
-	    path: '/question/:questionId', 
-	    name: 'QuestionDetail',
-		layout: DefaultLayout,
-	    component: QuestionDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/interviews',
-		name: 'Interviews',
-		layout: DefaultLayout,
-		component: Interviews,
-	},
-	{
-	    path: '/interview/:interviewId', 
-	    name: 'InterviewDetail',
-		layout: DefaultLayout,
-	    component: InterviewDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/interviewers',
-		name: 'Interviewers',
-		layout: DefaultLayout,
-		component: Interviewers,
-	},
-	{
-	    path: '/interviewer/:interviewerId', 
-	    name: 'InterviewerDetail',
-		layout: DefaultLayout,
-	    component: InterviewerDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/interviewSlots',
-		name: 'InterviewSlots',
-		layout: DefaultLayout,
-		component: InterviewSlots,
-	},
-	{
-	    path: '/interviewSlot/:interviewSlotId', 
-	    name: 'InterviewSlotDetail',
-		layout: DefaultLayout,
-	    component: InterviewSlotDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/feedbacks',
-		name: 'Feedbacks',
-		layout: DefaultLayout,
-		component: Feedbacks,
-	},
-	{
-	    path: '/feedback/:feedbackId', 
-	    name: 'FeedbackDetail',
-		layout: DefaultLayout,
-	    component: FeedbackDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/candidates',
-		name: 'Candidates',
-		layout: DefaultLayout,
-		component: Candidates,
-	},
-	{
-	    path: '/candidate/:candidateId', 
-	    name: 'CandidateDetail',
-		layout: DefaultLayout,
-	    component: CandidateDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/departments',
-		name: 'Departments',
-		layout: DefaultLayout,
-		component: Departments,
-	},
-	{
-	    path: '/department/:departmentId', 
-	    name: 'DepartmentDetail',
-		layout: DefaultLayout,
-	    component: DepartmentDetail,
-	    props: true // Pass route params as props to the component
-  	},
 	{
 		path: '/roles',
 		name: 'Roles',
@@ -314,6 +184,136 @@ const routes = [
 	    name: 'MeetingNoteDetail',
 		layout: DefaultLayout,
 	    component: MeetingNoteDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/questions',
+		name: 'Questions',
+		layout: DefaultLayout,
+		component: Questions,
+	},
+	{
+	    path: '/question/:questionId', 
+	    name: 'QuestionDetail',
+		layout: DefaultLayout,
+	    component: QuestionDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/interviews',
+		name: 'Interviews',
+		layout: DefaultLayout,
+		component: Interviews,
+	},
+	{
+	    path: '/interview/:interviewId', 
+	    name: 'InterviewDetail',
+		layout: DefaultLayout,
+	    component: InterviewDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/interviewers',
+		name: 'Interviewers',
+		layout: DefaultLayout,
+		component: Interviewers,
+	},
+	{
+	    path: '/interviewer/:interviewerId', 
+	    name: 'InterviewerDetail',
+		layout: DefaultLayout,
+	    component: InterviewerDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/interviewSlots',
+		name: 'InterviewSlots',
+		layout: DefaultLayout,
+		component: InterviewSlots,
+	},
+	{
+	    path: '/interviewSlot/:interviewSlotId', 
+	    name: 'InterviewSlotDetail',
+		layout: DefaultLayout,
+	    component: InterviewSlotDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/feedbacks',
+		name: 'Feedbacks',
+		layout: DefaultLayout,
+		component: Feedbacks,
+	},
+	{
+	    path: '/feedback/:feedbackId', 
+	    name: 'FeedbackDetail',
+		layout: DefaultLayout,
+	    component: FeedbackDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/candidates',
+		name: 'Candidates',
+		layout: DefaultLayout,
+		component: Candidates,
+	},
+	{
+	    path: '/candidate/:candidateId', 
+	    name: 'CandidateDetail',
+		layout: DefaultLayout,
+	    component: CandidateDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/jobDescriptions',
+		name: 'JobDescriptions',
+		layout: DefaultLayout,
+		component: JobDescriptions,
+	},
+	{
+	    path: '/jobDescription/:jobDescriptionId', 
+	    name: 'JobDescriptionDetail',
+		layout: DefaultLayout,
+	    component: JobDescriptionDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/departments',
+		name: 'Departments',
+		layout: DefaultLayout,
+		component: Departments,
+	},
+	{
+	    path: '/department/:departmentId', 
+	    name: 'DepartmentDetail',
+		layout: DefaultLayout,
+	    component: DepartmentDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/focusAreas',
+		name: 'FocusAreas',
+		layout: DefaultLayout,
+		component: FocusAreas,
+	},
+	{
+	    path: '/focusArea/:focusAreaId', 
+	    name: 'FocusAreaDetail',
+		layout: DefaultLayout,
+	    component: FocusAreaDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/resumes',
+		name: 'Resumes',
+		layout: DefaultLayout,
+		component: Resumes,
+	},
+	{
+	    path: '/resume/:resumeId', 
+	    name: 'ResumeDetail',
+		layout: DefaultLayout,
+	    component: ResumeDetail,
 	    props: true // Pass route params as props to the component
   	},
 ];

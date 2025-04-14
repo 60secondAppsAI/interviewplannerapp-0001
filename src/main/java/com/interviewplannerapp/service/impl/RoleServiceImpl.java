@@ -119,8 +119,8 @@ public class RoleServiceImpl extends GenericServiceImpl<Role, Integer> implement
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("title")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("level")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("level")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("title")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

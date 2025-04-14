@@ -21,8 +21,8 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="QuestionId" type="text" placeholder="Enter QuestionId" v-model="questionToAdd.questionId"></base-input>
 								  <base-input label="Content" type="text" placeholder="Enter Content" v-model="questionToAdd.content"></base-input>
+								  <base-input label="QuestionId" type="text" placeholder="Enter QuestionId" v-model="questionToAdd.questionId"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

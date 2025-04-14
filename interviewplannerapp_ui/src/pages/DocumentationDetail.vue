@@ -21,8 +21,8 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="DocumentationId" type="text" placeholder="Enter DocumentationId" v-model="documentationToAdd.documentationId"></base-input>
 								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="documentationToAdd.name"></base-input>
+								  <base-input label="DocumentationId" type="text" placeholder="Enter DocumentationId" v-model="documentationToAdd.documentationId"></base-input>
 								  <base-input label="Link" type="text" placeholder="Enter Link" v-model="documentationToAdd.link"></base-input>
 												                  </form>
 								                </div>

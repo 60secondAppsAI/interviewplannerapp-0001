@@ -21,9 +21,9 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="AccountId" type="text" placeholder="Enter AccountId" v-model="accountToAdd.accountId"></base-input>
-								  <base-input label="Username" type="text" placeholder="Enter Username" v-model="accountToAdd.username"></base-input>
 								  <base-input label="Password" type="text" placeholder="Enter Password" v-model="accountToAdd.password"></base-input>
+								  <base-input label="Username" type="text" placeholder="Enter Username" v-model="accountToAdd.username"></base-input>
+								  <base-input label="AccountId" type="text" placeholder="Enter AccountId" v-model="accountToAdd.accountId"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

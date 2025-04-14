@@ -123,8 +123,8 @@ public class ExperienceServiceImpl extends GenericServiceImpl<Experience, Intege
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("companyName")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("roleTitle")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("roleTitle")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("companyName")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

@@ -119,8 +119,8 @@ public class InterviewerServiceImpl extends GenericServiceImpl<Interviewer, Inte
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("name")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("expertise")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("expertise")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("name")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

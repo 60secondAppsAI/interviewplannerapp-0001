@@ -21,9 +21,9 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="EducationId" type="text" placeholder="Enter EducationId" v-model="educationToAdd.educationId"></base-input>
 								  <base-input label="Institution" type="text" placeholder="Enter Institution" v-model="educationToAdd.institution"></base-input>
 								  <base-input label="Degree" type="text" placeholder="Enter Degree" v-model="educationToAdd.degree"></base-input>
+								  <base-input label="EducationId" type="text" placeholder="Enter EducationId" v-model="educationToAdd.educationId"></base-input>
 								  <base-input label="YearOfGraduation" type="text" placeholder="Enter YearOfGraduation" v-model="educationToAdd.yearOfGraduation"></base-input>
 												                  </form>
 								                </div>
