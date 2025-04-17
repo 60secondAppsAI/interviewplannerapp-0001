@@ -22,9 +22,9 @@
 								                <div>
 								                  <form @submit.prevent>
 								  <base-input label="ExperienceId" type="text" placeholder="Enter ExperienceId" v-model="experienceToAdd.experienceId"></base-input>
-								  <base-input label="Years" type="text" placeholder="Enter Years" v-model="experienceToAdd.years"></base-input>
-								  <base-input label="RoleTitle" type="text" placeholder="Enter RoleTitle" v-model="experienceToAdd.roleTitle"></base-input>
 								  <base-input label="CompanyName" type="text" placeholder="Enter CompanyName" v-model="experienceToAdd.companyName"></base-input>
+								  <base-input label="RoleTitle" type="text" placeholder="Enter RoleTitle" v-model="experienceToAdd.roleTitle"></base-input>
+								  <base-input label="Years" type="text" placeholder="Enter Years" v-model="experienceToAdd.years"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

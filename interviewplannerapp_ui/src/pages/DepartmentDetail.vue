@@ -21,9 +21,9 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="Head" type="text" placeholder="Enter Head" v-model="departmentToAdd.head"></base-input>
-								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="departmentToAdd.name"></base-input>
 								  <base-input label="DepartmentId" type="text" placeholder="Enter DepartmentId" v-model="departmentToAdd.departmentId"></base-input>
+								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="departmentToAdd.name"></base-input>
+								  <base-input label="Head" type="text" placeholder="Enter Head" v-model="departmentToAdd.head"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

@@ -21,8 +21,8 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="Level" type="text" placeholder="Enter Level" v-model="skillToAdd.level"></base-input>
 								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="skillToAdd.name"></base-input>
+								  <base-input label="Level" type="text" placeholder="Enter Level" v-model="skillToAdd.level"></base-input>
 								  <base-input label="SkillId" type="text" placeholder="Enter SkillId" v-model="skillToAdd.skillId"></base-input>
 												                  </form>
 								                </div>

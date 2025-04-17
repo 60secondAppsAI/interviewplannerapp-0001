@@ -21,9 +21,9 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
+								  <base-input label="InterviewSlotId" type="text" placeholder="Enter InterviewSlotId" v-model="interviewSlotToAdd.interviewSlotId"></base-input>
 								  <base-input label="StartTime" type="text" placeholder="Enter StartTime" v-model="interviewSlotToAdd.startTime"></base-input>
 								  <base-input label="EndTime" type="text" placeholder="Enter EndTime" v-model="interviewSlotToAdd.endTime"></base-input>
-								  <base-input label="InterviewSlotId" type="text" placeholder="Enter InterviewSlotId" v-model="interviewSlotToAdd.interviewSlotId"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

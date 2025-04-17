@@ -119,8 +119,8 @@ public class AccountServiceImpl extends GenericServiceImpl<Account, Integer> imp
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("password")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("username")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("username")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("password")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

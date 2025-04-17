@@ -35,9 +35,9 @@
                 </template>
                 <div>
                   <form @submit.prevent>
-  <base-input label="Password" type="text" placeholder="Enter Password" v-model="accountToAdd.password"></base-input>
-  <base-input label="Username" type="text" placeholder="Enter Username" v-model="accountToAdd.username"></base-input>
   <base-input label="AccountId" type="text" placeholder="Enter AccountId" v-model="accountToAdd.accountId"></base-input>
+  <base-input label="Username" type="text" placeholder="Enter Username" v-model="accountToAdd.username"></base-input>
+  <base-input label="Password" type="text" placeholder="Enter Password" v-model="accountToAdd.password"></base-input>
                   </form>
                 </div>
                 <template slot="footer">
@@ -237,12 +237,6 @@ export default {
         this.columns = this.columns.filter(item => item.visible);
     },
 
-    routingToRoleDetail(id) {
-      this.$router.push({ name: 'RoleDetail', params: { roleId: id.toString() }})
-    },
-    routingToEducationDetail(id) {
-      this.$router.push({ name: 'EducationDetail', params: { educationId: id.toString() }})
-    },
     routingToExperienceDetail(id) {
       this.$router.push({ name: 'ExperienceDetail', params: { experienceId: id.toString() }})
     },
@@ -264,12 +258,6 @@ export default {
     routingToMeetingNoteDetail(id) {
       this.$router.push({ name: 'MeetingNoteDetail', params: { meetingNoteId: id.toString() }})
     },
-    routingToQuestionDetail(id) {
-      this.$router.push({ name: 'QuestionDetail', params: { questionId: id.toString() }})
-    },
-    routingToInterviewDetail(id) {
-      this.$router.push({ name: 'InterviewDetail', params: { interviewId: id.toString() }})
-    },
     routingToInterviewerDetail(id) {
       this.$router.push({ name: 'InterviewerDetail', params: { interviewerId: id.toString() }})
     },
@@ -282,14 +270,26 @@ export default {
     routingToCandidateDetail(id) {
       this.$router.push({ name: 'CandidateDetail', params: { candidateId: id.toString() }})
     },
-    routingToJobDescriptionDetail(id) {
-      this.$router.push({ name: 'JobDescriptionDetail', params: { jobDescriptionId: id.toString() }})
-    },
     routingToDepartmentDetail(id) {
       this.$router.push({ name: 'DepartmentDetail', params: { departmentId: id.toString() }})
     },
+    routingToRoleDetail(id) {
+      this.$router.push({ name: 'RoleDetail', params: { roleId: id.toString() }})
+    },
+    routingToJobDescriptionDetail(id) {
+      this.$router.push({ name: 'JobDescriptionDetail', params: { jobDescriptionId: id.toString() }})
+    },
     routingToFocusAreaDetail(id) {
       this.$router.push({ name: 'FocusAreaDetail', params: { focusAreaId: id.toString() }})
+    },
+    routingToQuestionDetail(id) {
+      this.$router.push({ name: 'QuestionDetail', params: { questionId: id.toString() }})
+    },
+    routingToInterviewDetail(id) {
+      this.$router.push({ name: 'InterviewDetail', params: { interviewId: id.toString() }})
+    },
+    routingToEducationDetail(id) {
+      this.$router.push({ name: 'EducationDetail', params: { educationId: id.toString() }})
     },
     routingToResumeDetail(id) {
       this.$router.push({ name: 'ResumeDetail', params: { resumeId: id.toString() }})

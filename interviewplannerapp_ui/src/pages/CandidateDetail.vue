@@ -21,10 +21,10 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
+								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="candidateToAdd.name"></base-input>
 								  <base-input label="Email" type="text" placeholder="Enter Email" v-model="candidateToAdd.email"></base-input>
 								  <base-input label="PhoneNumber" type="text" placeholder="Enter PhoneNumber" v-model="candidateToAdd.phoneNumber"></base-input>
 								  <base-input label="CandidateId" type="text" placeholder="Enter CandidateId" v-model="candidateToAdd.candidateId"></base-input>
-								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="candidateToAdd.name"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

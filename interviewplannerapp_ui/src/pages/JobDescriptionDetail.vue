@@ -21,10 +21,10 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="JobDescriptionId" type="text" placeholder="Enter JobDescriptionId" v-model="jobDescriptionToAdd.jobDescriptionId"></base-input>
-								  <base-input label="RoleTitle" type="text" placeholder="Enter RoleTitle" v-model="jobDescriptionToAdd.roleTitle"></base-input>
 								  <base-input label="Department" type="text" placeholder="Enter Department" v-model="jobDescriptionToAdd.department"></base-input>
+								  <base-input label="JobDescriptionId" type="text" placeholder="Enter JobDescriptionId" v-model="jobDescriptionToAdd.jobDescriptionId"></base-input>
 								  <base-input label="FilePath" type="text" placeholder="Enter FilePath" v-model="jobDescriptionToAdd.filePath"></base-input>
+								  <base-input label="RoleTitle" type="text" placeholder="Enter RoleTitle" v-model="jobDescriptionToAdd.roleTitle"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

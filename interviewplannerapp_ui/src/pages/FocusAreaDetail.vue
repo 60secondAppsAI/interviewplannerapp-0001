@@ -21,8 +21,8 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="FocusAreaId" type="text" placeholder="Enter FocusAreaId" v-model="focusAreaToAdd.focusAreaId"></base-input>
 								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="focusAreaToAdd.name"></base-input>
+								  <base-input label="FocusAreaId" type="text" placeholder="Enter FocusAreaId" v-model="focusAreaToAdd.focusAreaId"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

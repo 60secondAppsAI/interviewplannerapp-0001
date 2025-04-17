@@ -1,10 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
-import Roles from  '@/pages/Roles.vue';
-import RoleDetail from  '@/pages/RoleDetail.vue';
-import Educations from  '@/pages/Educations.vue';
-import EducationDetail from  '@/pages/EducationDetail.vue';
 import Experiences from  '@/pages/Experiences.vue';
 import ExperienceDetail from  '@/pages/ExperienceDetail.vue';
 import Accounts from  '@/pages/Accounts.vue';
@@ -19,10 +15,6 @@ import Permissions from  '@/pages/Permissions.vue';
 import PermissionDetail from  '@/pages/PermissionDetail.vue';
 import MeetingNotes from  '@/pages/MeetingNotes.vue';
 import MeetingNoteDetail from  '@/pages/MeetingNoteDetail.vue';
-import Questions from  '@/pages/Questions.vue';
-import QuestionDetail from  '@/pages/QuestionDetail.vue';
-import Interviews from  '@/pages/Interviews.vue';
-import InterviewDetail from  '@/pages/InterviewDetail.vue';
 import Interviewers from  '@/pages/Interviewers.vue';
 import InterviewerDetail from  '@/pages/InterviewerDetail.vue';
 import InterviewSlots from  '@/pages/InterviewSlots.vue';
@@ -31,12 +23,20 @@ import Feedbacks from  '@/pages/Feedbacks.vue';
 import FeedbackDetail from  '@/pages/FeedbackDetail.vue';
 import Candidates from  '@/pages/Candidates.vue';
 import CandidateDetail from  '@/pages/CandidateDetail.vue';
-import JobDescriptions from  '@/pages/JobDescriptions.vue';
-import JobDescriptionDetail from  '@/pages/JobDescriptionDetail.vue';
 import Departments from  '@/pages/Departments.vue';
 import DepartmentDetail from  '@/pages/DepartmentDetail.vue';
+import Roles from  '@/pages/Roles.vue';
+import RoleDetail from  '@/pages/RoleDetail.vue';
+import JobDescriptions from  '@/pages/JobDescriptions.vue';
+import JobDescriptionDetail from  '@/pages/JobDescriptionDetail.vue';
 import FocusAreas from  '@/pages/FocusAreas.vue';
 import FocusAreaDetail from  '@/pages/FocusAreaDetail.vue';
+import Questions from  '@/pages/Questions.vue';
+import QuestionDetail from  '@/pages/QuestionDetail.vue';
+import Interviews from  '@/pages/Interviews.vue';
+import InterviewDetail from  '@/pages/InterviewDetail.vue';
+import Educations from  '@/pages/Educations.vue';
+import EducationDetail from  '@/pages/EducationDetail.vue';
 import Resumes from  '@/pages/Resumes.vue';
 import ResumeDetail from  '@/pages/ResumeDetail.vue';
 
@@ -69,32 +69,6 @@ const routes = [
     name: "StripeCheckoutView",
     component: () => import("../views/StripeCheckoutView.vue"),
   },
-	{
-		path: '/roles',
-		name: 'Roles',
-		layout: DefaultLayout,
-		component: Roles,
-	},
-	{
-	    path: '/role/:roleId', 
-	    name: 'RoleDetail',
-		layout: DefaultLayout,
-	    component: RoleDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/educations',
-		name: 'Educations',
-		layout: DefaultLayout,
-		component: Educations,
-	},
-	{
-	    path: '/education/:educationId', 
-	    name: 'EducationDetail',
-		layout: DefaultLayout,
-	    component: EducationDetail,
-	    props: true // Pass route params as props to the component
-  	},
 	{
 		path: '/experiences',
 		name: 'Experiences',
@@ -187,32 +161,6 @@ const routes = [
 	    props: true // Pass route params as props to the component
   	},
 	{
-		path: '/questions',
-		name: 'Questions',
-		layout: DefaultLayout,
-		component: Questions,
-	},
-	{
-	    path: '/question/:questionId', 
-	    name: 'QuestionDetail',
-		layout: DefaultLayout,
-	    component: QuestionDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
-		path: '/interviews',
-		name: 'Interviews',
-		layout: DefaultLayout,
-		component: Interviews,
-	},
-	{
-	    path: '/interview/:interviewId', 
-	    name: 'InterviewDetail',
-		layout: DefaultLayout,
-	    component: InterviewDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
 		path: '/interviewers',
 		name: 'Interviewers',
 		layout: DefaultLayout,
@@ -265,19 +213,6 @@ const routes = [
 	    props: true // Pass route params as props to the component
   	},
 	{
-		path: '/jobDescriptions',
-		name: 'JobDescriptions',
-		layout: DefaultLayout,
-		component: JobDescriptions,
-	},
-	{
-	    path: '/jobDescription/:jobDescriptionId', 
-	    name: 'JobDescriptionDetail',
-		layout: DefaultLayout,
-	    component: JobDescriptionDetail,
-	    props: true // Pass route params as props to the component
-  	},
-	{
 		path: '/departments',
 		name: 'Departments',
 		layout: DefaultLayout,
@@ -291,6 +226,32 @@ const routes = [
 	    props: true // Pass route params as props to the component
   	},
 	{
+		path: '/roles',
+		name: 'Roles',
+		layout: DefaultLayout,
+		component: Roles,
+	},
+	{
+	    path: '/role/:roleId', 
+	    name: 'RoleDetail',
+		layout: DefaultLayout,
+	    component: RoleDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/jobDescriptions',
+		name: 'JobDescriptions',
+		layout: DefaultLayout,
+		component: JobDescriptions,
+	},
+	{
+	    path: '/jobDescription/:jobDescriptionId', 
+	    name: 'JobDescriptionDetail',
+		layout: DefaultLayout,
+	    component: JobDescriptionDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
 		path: '/focusAreas',
 		name: 'FocusAreas',
 		layout: DefaultLayout,
@@ -301,6 +262,45 @@ const routes = [
 	    name: 'FocusAreaDetail',
 		layout: DefaultLayout,
 	    component: FocusAreaDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/questions',
+		name: 'Questions',
+		layout: DefaultLayout,
+		component: Questions,
+	},
+	{
+	    path: '/question/:questionId', 
+	    name: 'QuestionDetail',
+		layout: DefaultLayout,
+	    component: QuestionDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/interviews',
+		name: 'Interviews',
+		layout: DefaultLayout,
+		component: Interviews,
+	},
+	{
+	    path: '/interview/:interviewId', 
+	    name: 'InterviewDetail',
+		layout: DefaultLayout,
+	    component: InterviewDetail,
+	    props: true // Pass route params as props to the component
+  	},
+	{
+		path: '/educations',
+		name: 'Educations',
+		layout: DefaultLayout,
+		component: Educations,
+	},
+	{
+	    path: '/education/:educationId', 
+	    name: 'EducationDetail',
+		layout: DefaultLayout,
+	    component: EducationDetail,
 	    props: true // Pass route params as props to the component
   	},
 	{

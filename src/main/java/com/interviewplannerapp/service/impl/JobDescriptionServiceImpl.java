@@ -125,9 +125,9 @@ public class JobDescriptionServiceImpl extends GenericServiceImpl<JobDescription
 		if (searchQuery != null && !searchQuery.isEmpty()) {
 			spec = spec.and((root, query, cb) -> cb.or(
 
-             cb.like(cb.lower(root.get("roleTitle")), "%" + searchQuery.toLowerCase() + "%") 
-             , cb.like(cb.lower(root.get("department")), "%" + searchQuery.toLowerCase() + "%") 
+             cb.like(cb.lower(root.get("department")), "%" + searchQuery.toLowerCase() + "%") 
              , cb.like(cb.lower(root.get("filePath")), "%" + searchQuery.toLowerCase() + "%") 
+             , cb.like(cb.lower(root.get("roleTitle")), "%" + searchQuery.toLowerCase() + "%") 
 		));}
 		
 		Sort sort = Sort.unsorted();

@@ -21,8 +21,8 @@
 								                </template>
 								                <div>
 								                  <form @submit.prevent>
-								  <base-input label="Type" type="text" placeholder="Enter Type" v-model="permissionToAdd.type"></base-input>
 								  <base-input label="PermissionId" type="text" placeholder="Enter PermissionId" v-model="permissionToAdd.permissionId"></base-input>
+								  <base-input label="Type" type="text" placeholder="Enter Type" v-model="permissionToAdd.type"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

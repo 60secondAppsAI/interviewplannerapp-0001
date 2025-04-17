@@ -22,8 +22,8 @@
 								                <div>
 								                  <form @submit.prevent>
 								  <base-input label="InterviewerId" type="text" placeholder="Enter InterviewerId" v-model="interviewerToAdd.interviewerId"></base-input>
-								  <base-input label="Expertise" type="text" placeholder="Enter Expertise" v-model="interviewerToAdd.expertise"></base-input>
 								  <base-input label="Name" type="text" placeholder="Enter Name" v-model="interviewerToAdd.name"></base-input>
+								  <base-input label="Expertise" type="text" placeholder="Enter Expertise" v-model="interviewerToAdd.expertise"></base-input>
 												                  </form>
 								                </div>
 								                <template slot="footer">

@@ -32,18 +32,6 @@
 	 
 			
 				<a-menu-item>
-					<router-link to="/roles">
-						<span class="label">Roles</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/educations">
-						<span class="label">Educations</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
 					<router-link to="/experiences">
 						<span class="label">Experiences</span>
 					</router-link>
@@ -86,18 +74,6 @@
 				</a-menu-item>
 		
 				<a-menu-item>
-					<router-link to="/questions">
-						<span class="label">Questions</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
-					<router-link to="/interviews">
-						<span class="label">Interviews</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
 					<router-link to="/interviewers">
 						<span class="label">Interviewers</span>
 					</router-link>
@@ -122,20 +98,44 @@
 				</a-menu-item>
 		
 				<a-menu-item>
-					<router-link to="/jobDescriptions">
-						<span class="label">Job Descriptions</span>
-					</router-link>
-				</a-menu-item>
-		
-				<a-menu-item>
 					<router-link to="/departments">
 						<span class="label">Departments</span>
 					</router-link>
 				</a-menu-item>
 		
 				<a-menu-item>
+					<router-link to="/roles">
+						<span class="label">Roles</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/jobDescriptions">
+						<span class="label">Job Descriptions</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
 					<router-link to="/focusAreas">
 						<span class="label">Focus Areas</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/questions">
+						<span class="label">Questions</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/interviews">
+						<span class="label">Interviews</span>
+					</router-link>
+				</a-menu-item>
+		
+				<a-menu-item>
+					<router-link to="/educations">
+						<span class="label">Educations</span>
 					</router-link>
 				</a-menu-item>
 		
